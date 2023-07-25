@@ -14,7 +14,7 @@
   </div>
   <nav>
     <ul
-      class="[&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a]:text-current font-medium flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+      class="hidden lg:flex [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a]:text-current font-medium text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
     >
       <li><a href="#">Model S</a></li>
       <li><a href="#">Model 3</a></li>
@@ -28,12 +28,13 @@
     <ul
       class="[&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a]:text-current font-medium flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
     >
-      <li><a href="#">Support</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Account</a></li>
+      <li class="hidden lg:flex"><a href="#">Support</a></li>
+      <li class="hidden lg:flex"><a href="#">Shop</a></li>
+      <li class="hidden lg:flex"><a href="#">Account</a></li>
       <li><a href="#">Menu</a></li>
     </ul>
   </nav>
+
   <div
     id="menu-backdrop"
     class={`left-0 top-0 -z-10 opacity-0 absolute bg-black/5 backdrop-blur-lg rounded translate-x-[var(--left)] translate-y-[var(--top)] w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-in-out`}
